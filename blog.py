@@ -68,7 +68,7 @@ def postsave():
         db.session.commit()
     all = Post.query.all()
     
-    return render_template("index1.html",all=all)  
+    return render_template("admin.html",all=all)  
 
 @app.route("/update/<int:sno>",methods =['GET','POST'])
 @login_required
