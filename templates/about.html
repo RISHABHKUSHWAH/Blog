@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block body %}
+   
+
+    <div class="blog pb-5">
+        <div class="container">
+            <section class="section single-page">
+                <div class="section-title">
+                    <h1>about me</h1>
+                    <div class="underline"></div>
+                </div>
+                <div class="section-center page-info">
+                    <p>
+                        Hello, I am Danang Haris Setiawan and I am a web developer. I live and work in
+                        somewhere warm. I spend most of my day, experimenting with HTML, CSS
+                        and JavaScript (and its endless list of frameworks). I enjoy coding
+                        and the challenge of learning something new everyday. You can also
+                        find me at website
+                        <a href="https://www.darisset.site">Darisset</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- newsletter -->
+    <section class="section newsletter" id="newsletter">
+        <div class="container section-center newsletter-center">
+            <div class="newsletter-title">
+                <h3>want latest post info and updates?</h3>
+                <p>Sign up for newsletter and stay up to date</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" class="form-control" placeholder="your email" />
+                <button type="submit" class="btn">submit</button>
+            </form>
+        </div>
+    </section>
+  {% endblock %}

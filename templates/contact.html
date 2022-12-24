@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+
+    <div class="blog pb-5">
+        <div class="container">
+            <!-- contact -->
+            <div class="section-title">
+                <h1>Contact me</h1>
+                <div class="underline"></div>
+            </div>
+            <section class="contact p-5">
+                <div class="section-center clearfix">
+                    <!-- contact info -->
+                    <article class="contact-info">
+                        <!-- contact item -->
+                        <div class="contact-item">
+                            <h4 class="contact-title">
+                                <span class="contact-icon">
+                                    <i class="fas fa-location-arrow"></i>
+                                </span>
+                                address
+                            </h4>
+                            <p class="contact-text">
+                                Hathras,UP, <br />
+                                India
+                            </p>
+                        </div>
+                        <!-- end of contact item -->
+                        <!-- contact item -->
+                        <div class="contact-item">
+                            <h4 class="contact-title">
+                                <span class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                email
+                            </h4>
+                            <p class="contact-text">
+                                kushwahrishabh0@gmail.com
+                            </p>
+                        </div>
+                        <!-- end of contact item -->
+                        <!-- contact item -->
+                        <div class="contact-item">
+                            <h4 class="contact-title">
+                                <span class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </span>
+                                telephone
+                            </h4>
+                            <p class="contact-text">
+                                +91xxxxxxxxxx
+                            </p>
+                        </div>
+                        <!-- end of contact item -->
+                    </article>
+                    <!-- contact form -->
+                    <article class="contact-form">
+                        <h3>contact us</h3>
+                        <form action='/contact' method='POST'>
+                            <div class="form-group">
+                                <!-- inputs -->
+                                <input type="text" placeholder="name" class="form-control mb-3" name="name" />
+                                <input type="email" placeholder="email" class="form-control mb-3" name="email" />
+                                <textarea name="message" placeholder="message" class="form-control mb-3"
+                                    rows="5"></textarea>
+                            </div>
+                            <!-- button -->
+                            <button type="submit" class="contact-btn btn">submit here</button>
+                        </form>
+                    </article>
+                </div>
+            </section>
+            <!-- end of contact -->
+        </div>
+    </div>
+
+    <!-- contact -->
+    <section class="section newsletter" id="newsletter">
+        <div class="container section-center newsletter-center">
+            <div class="newsletter-title">
+                <h3>want latest post info and updates?</h3>
+                <p>Sign up for newsletter and stay up to date</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" class="form-control" placeholder="your email" />
+                <button type="submit" class="btn-submit">submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- end of contact -->
+{% endblock %}

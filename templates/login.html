@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="pb-5">
+        <div class="container d-flex justify-content-center">
+            <article class="contact-form">
+                <h3>Login</h3>
+                <p>if you don't have a registered account, you can register <a href="/register">here!</a></p>
+                <form action="/login" method='POST'>
+                    <div class="form-group">
+                        <!-- inputs -->
+                        <input type="text" placeholder="username" class="form-control mb-3" name="username" />
+                        <input type="password" placeholder="password" class="form-control mb-3" name="password" />
+                    </div>
+                    <!-- button -->
+                    <p><a href="#">Forgot password?</a> </p>
+                    <button type="submit" class="contact-btn btn">login</button>
+                </form>
+            </article>
+        </div>
+    </div>
+
+    <!-- newsletter -->
+    <section class="section newsletter" id="newsletter">
+        <div class="container section-center newsletter-center">
+            <div class="newsletter-title">
+                <h3>want latest post info and updates?</h3>
+                <p>Sign up for newsletter and stay up to date</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" class="form-control" placeholder="your email" />
+                <button type="submit" class="btn">submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- end of newsletter -->
+{% endblock %}
